@@ -1,18 +1,47 @@
-<footer class="site-footer" style="margin-top: 3em; text-align: center; padding: 2em 0; border-top: 1px solid #ddd;">
-  <!-- Blog info -->
-  <p style="margin: 0.2em 0;">
-    <strong>{{ site.title }}</strong><br>
-    {{ site.author }}<br>
-    {{ site.description }}
-  </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    .post-title a { text-decoration: underline; color: #0366d6; }
+    .post-title a:hover { text-decoration: none; }
+    .social-links { display: flex; justify-content: center; gap: 1em; margin-top: 0.5em; }
+    .social-links a { display: flex; align-items: center; gap: 0.3em; text-decoration: none; color: inherit; }
+    .about-me { text-align: center; margin-bottom: 2em; }
+  </style>
+</head>
+<body>
 
-  <!-- Social links -->
-  <p class="social-links" style="margin-top: 0.5em; display: flex; justify-content: center; gap: 1em;">
-    <a href="https://github.com/{{ site.github_username }}" target="_blank" aria-label="GitHub" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.3em;">
-      <img src="/assets/img/github-icon.svg" alt="GitHub" width="20"> {{ site.github_username }}
-    </a>
-    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" aria-label="LinkedIn" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.3em;">
-      <img src="/assets/img/linkedin-icon.svg" alt="LinkedIn" width="20"> {{ site.linkedin_username }}
-    </a>
-  </p>
-</footer>
+  <!-- Navbar -->
+  <nav style="text-align: center; margin-bottom: 2em;">
+    <a href="{{ '/' | relative_url }}" style="margin-right: 1em; font-weight: bold;"> Home</a>
+    <a href="{{ '/about/' | relative_url }}" style="font-weight: bold;"> About Me</a>
+  </nav>
+
+  <!-- Main content -->
+  <main style="max-width: 700px; margin: auto; padding: 2em;">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; margin-top: 3em; padding: 2em 0; border-top: 1px solid #ddd;">
+    <p style="margin: 0.2em 0;">
+      <strong>{{ site.title }}</strong><br>
+      {{ site.author }}<br>
+      {{ site.description }}
+    </p>
+    <p class="social-links">
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">
+        <img src="/assets/img/github-icon.svg" alt="GitHub" width="20"> {{ site.github_username }}
+      </a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+        <img src="/assets/img/linkedin-icon.svg" alt="LinkedIn" width="20"> {{ site.linkedin_username }}
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
