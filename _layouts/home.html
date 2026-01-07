@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+
+  {% for post in site.posts %}
+    <div class="post">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </div>
+  {% endfor %}
+
+  <div class="social">
+    {% for network, username in site.minima.social_links %}
+      <a href="https://{{ network }}.com/{{ username }}" target="_blank">{{ network | capitalize }}</a>
+    {% endfor %}
+  </div>
+</div>
