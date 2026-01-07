@@ -16,5 +16,4 @@ minima:
     github: ansonnchan
     linkedin: ansonnchan
 
-permalink: /:title/ 
-
+permalink: /:title/
