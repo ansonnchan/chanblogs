@@ -1,5 +1,6 @@
 title: liminal
 author: Anson
+description: Drifting through the adult world and documenting my experiences
 
 url: "https://ansonnchan.github.io"
 baseurl: "/chanblogs"
@@ -8,6 +9,7 @@ theme: minima
 
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
 
 github_username: ansonnchan
 linkedin_username: ansonnchan
@@ -15,8 +17,10 @@ linkedin_username: ansonnchan
 permalink: /:title/
 
 paginate: 10 
+paginate_path: "/page:num/"
 
 minima:
   show_feed: false 
+
 
 
