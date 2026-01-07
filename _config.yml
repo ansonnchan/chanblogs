@@ -11,8 +11,10 @@ plugins:
   - jekyll-sitemap
 
 minima:
+  show_feed: false
   social_links:
     github: ansonnchan
     linkedin: ansonnchan
 
 permalink: /:title/ 
+
