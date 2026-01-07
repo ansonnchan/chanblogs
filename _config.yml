@@ -10,10 +10,8 @@ theme: minima
 plugins:
   - jekyll-sitemap
 
-minima:
-  show_feed: false
-  social_links:
-    github: ansonnchan
-    linkedin: ansonnchan
+github_username: ansonnchan
+linkedin_username: ansonnchan
 
 permalink: /:title/
+
