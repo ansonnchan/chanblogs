@@ -6,10 +6,30 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <style>
-    .post-title a { text-decoration: underline; color: #0366d6; }
+    /* Post titles underlined */
+    .post-title a { 
+      text-decoration: underline; 
+      color: #0366d6; 
+    }
     .post-title a:hover { text-decoration: none; }
-    .social-links { display: flex; justify-content: center; gap: 1em; margin-top: 0.5em; }
-    .social-links a { display: flex; align-items: center; gap: 0.3em; text-decoration: none; color: inherit; }
+
+    /* Footer social links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 0.5em;
+    }
+    .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+      text-decoration: none;
+      color: inherit;
+    }
+    .social-links a img { vertical-align: middle; }
+
+    /* About Me section */
     .about-me { text-align: center; margin-bottom: 2em; }
   </style>
 </head>
@@ -17,8 +37,8 @@
 
   <!-- Navbar -->
   <nav style="text-align: center; margin-bottom: 2em;">
-    <a href="{{ '/' | relative_url }}" style="margin-right: 1em; font-weight: bold;"> Home</a>
-    <a href="{{ '/about/' | relative_url }}" style="font-weight: bold;"> About Me</a>
+    <a href="{{ '/' | relative_url }}" style="margin-right: 1em; font-weight: bold;">🏠 Home</a>
+    <a href="{{ '/about/' | relative_url }}" style="font-weight: bold;">ℹ️ About Me</a>
   </nav>
 
   <!-- Main content -->
@@ -35,10 +55,10 @@
     </p>
     <p class="social-links">
       <a href="https://github.com/{{ site.github_username }}" target="_blank">
-        <img src="/assets/img/github-icon.svg" alt="GitHub" width="20"> {{ site.github_username }}
+        <img src="/assets/imgs/github-icon.svg" alt="GitHub" width="20"> {{ site.github_username }}
       </a>
       <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-        <img src="/assets/img/linkedin-icon.svg" alt="LinkedIn" width="20"> {{ site.linkedin_username }}
+        <img src="/assets/imgs/linkedin-icon.svg" alt="LinkedIn" width="20"> {{ site.linkedin_username }}
       </a>
     </p>
   </footer>
