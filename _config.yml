@@ -15,3 +15,8 @@ linkedin_username: ansonnchan
 
 permalink: /:title/
 
+paginate: 10 
+
+minima:
+  show_feed: false 
+
