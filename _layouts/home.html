@@ -3,19 +3,39 @@ layout: default
 ---
 
 <div class="home">
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
 
-  {% for post in site.posts %}
-    <div class="post">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </div>
-  {% endfor %}
+  <!-- Navbar -->
+  <nav style="margin-bottom: 2em;">
+    <a href="{{ "/" | relative_url }}" style="text-decoration: none; font-weight: bold; margin-right: 1em;">🏠 Home</a>
+    <a href="{{ "/about/" | relative_url }}" style="text-decoration: none; font-weight: bold;">ℹ️ About Me</a>
+  </nav>
 
-  <div class="social">
-    {% for network, username in site.minima.social_links %}
-      <a href="https://{{ network }}.com/{{ username }}" target="_blank">{{ network | capitalize }}</a>
+  <!-- Site title + description -->
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p><em>{{ site.description }}</em></p>
+  </header>
+
+  <!-- Posts list -->
+  <section style="margin-top: 2em;">
+    <h2>Posts</h2>
+    {% for post in site.posts %}
+      <div class="post" style="margin-bottom: 1.5em;">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+        <p>{{ post.excerpt }}</p>
+      </div>
     {% endfor %}
-  </div>
+  </section>
+
+  <!-- Social links -->
+  <footer style="margin-top: 3em;">
+    <h3>Connect with me</h3>
+    {% for network, username in site.minima.social_links %}
+      <a href="https://{{ network }}.com/{{ username }}" target="_blank" style="margin-right: 1em;">
+        {{ network | capitalize }}
+      </a>
+    {% endfor %}
+  </footer>
+
 </div>
