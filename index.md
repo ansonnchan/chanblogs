@@ -1,12 +1,7 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
-
-<section class="about-me">
-  <h2>About Me</h2>
-  <p>{{ site.author }}<br>{{ site.description }}</p>
-</section>
 
 <section>
   <h2>Posts</h2>
