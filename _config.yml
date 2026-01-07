@@ -1,6 +1,5 @@
 title: liminal
 author: Anson
-description: Drifting through the adult world and documenting my experiences
 
 url: "https://ansonnchan.github.io"
 baseurl: "/chanblogs"
@@ -19,4 +18,5 @@ paginate: 10
 
 minima:
   show_feed: false 
+
 
