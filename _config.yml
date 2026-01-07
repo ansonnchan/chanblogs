@@ -8,11 +8,9 @@ baseurl: ""
 theme: minima
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
 
 minima:
   social_links:
-    - { platform: github, user_url: "https://github.com/ansonnchan" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/ansonnchan/" }
-    - { platform: instagram, user_url: "https://www.instagram.com/ansonnchan/" }
+    github: ansonnchan
+    linkedin: ansonnchan
