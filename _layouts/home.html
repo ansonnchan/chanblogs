@@ -31,7 +31,8 @@ layout: default
   <!-- Social links -->
   <footer style="margin-top: 3em;">
     <h3>Connect with me</h3>
-    {% for network, username in site.minima.social_links %}
+    {% for network in site.minima.social_links %}
+      {% assign username = site.minima.social_links[network] %}
       <a href="https://{{ network }}.com/{{ username }}" target="_blank" style="margin-right: 1em;">
         {{ network | capitalize }}
       </a>
