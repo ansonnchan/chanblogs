@@ -1,4 +1,6 @@
 ---
-liminal: Welcome to my blog
+layout: home
+title: liminal
 ---
 
+*Drifting through the adult world and documenting my experiences.*
