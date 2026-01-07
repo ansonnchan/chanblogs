@@ -1,14 +1,18 @@
+title: liminal
+author: Anson
+description: Drifting through the adult world and documenting my experiences
+
+url: "https://ansonnchan.github.io"
+baseurl: ""
+
 theme: minima
 
-title: liminal
-
-author: Anson Chan
-
-description: Drifting through the adult world and documenting my experiences
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
 minima:
   social_links:
-    - { platform: github,  user_url: "https://github.com/ansonnchan" }
+    - { platform: github, user_url: "https://github.com/ansonnchan" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/ansonnchan/" }
     - { platform: instagram, user_url: "https://www.instagram.com/ansonnchan/" }
-
