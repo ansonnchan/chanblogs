@@ -8,15 +8,20 @@ title: Home
 
   {% for post in paginator.posts %}
     <article class="post">
-      <h3 class="post-title">
+      <!-- Post title -->
+      <h3 class="post-link">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h3>
 
+      <!-- Post date -->
       <small class="post-meta">
         {{ post.date | date: "%b %-d, %Y" }}
       </small>
 
-      <p>{{ post.excerpt }}</p>
+      <!-- Custom description (if it exists) -->
+      {% if post.description %}
+        <p class="post-description">{{ post.description }}</p>
+      {% endif %}
     </article>
   {% endfor %}
 </section>
