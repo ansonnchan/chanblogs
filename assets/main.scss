@@ -3,8 +3,14 @@
 
 @import "minima";
 
-.post-title {
-  font-size: 1.8rem;
+/* Homepage post titles */
+.post-link {
+  font-size: 1.6rem;
   line-height: 1.3;
-  margin-bottom: 0.5em;
+  font-weight: 500;
 }
+
+.post-title {
+  font-size: 2rem;
+}
+
