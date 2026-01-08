@@ -16,9 +16,7 @@ title: Home
         {{ post.date | date: "%b %-d, %Y" }}
       </small>
 
-      {% if post.excerpt %}
-        <p>{{ post.excerpt }}</p>
-      {% endif %}
+      <p>{{ post.excerpt }}</p>
     </article>
   {% endfor %}
 </section>
@@ -26,17 +24,11 @@ title: Home
 {% if paginator.total_pages > 1 %}
 <nav class="pagination">
   {% if paginator.previous_page %}
-    <a class="pagination-item newer"
-       href="{{ paginator.previous_page_path | relative_url }}">
-       ← Newer
-    </a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">← Newer</a>
   {% endif %}
 
   {% if paginator.next_page %}
-    <a class="pagination-item older"
-       href="{{ paginator.next_page_path | relative_url }}">
-       Older →
-    </a>
+    <a href="{{ paginator.next_page_path | relative_url }}">Older →</a>
   {% endif %}
 </nav>
 {% endif %}
