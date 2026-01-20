@@ -7,20 +7,36 @@ description: "How my journey into Machine Learning blurred the line between Comp
 ---
 <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
 
-<h2>🤖 CS vs CPEN: What Machine Learning Taught Me</h2>
+<h2>🤖 CS vs CPEN: My ML-Induced Identity Crisis</h2>
 
 <p>
-  Here’s where things got weird <em>for me</em>.
+  Back when I was applying to UBC — sometime around the Industrial Revolution era, apparently — I debated heavily whether to go CS or CPEN. It felt like picking the side of the force: software Jedi or hardware Sith (does Gen Alpha even know what Star Wars is or am I too old? Soon, even kids born
+  in the 2000s will be called uncs).
 </p>
 
 <p>
-  Like many students, I started with a simple plan:
-  <em>“I want to do Machine Learning → therefore CS.”</em>
-  Clean. Logical. Python-coded pipeline. End of story.
+  To be honest, I wasn’t completely sure I even wanted to do Machine Learning or software yet. I’d done well in STEM in high school — especially maths and physics — which, spoiler alert, has <em>zero correlation</em> with surviving university-level STEM. But hey, it made me feel like I had options.
 </p>
 
 <p>
-  Except… once you go beyond <code>scikit-learn</code> tutorials, that story falls apart fast.
+  I seriously considered mechanical engineering (clearly out after the infamous APSC 101 mechanical claw project<sup><a href="#apscclaw">1</a></sup>), and civil engineering (but my parents warned me that civil engineers tend to die of hypothermia and thirst in the field… thanks for the vote of confidence).
+</p>
+
+<img
+  src="https://raw.githubusercontent.com/ansonnchan/chanblogs/main/assets/imgs/co-op.png"
+  alt="CPEN Co-op Postings"
+  style="width: 100%; max-width: 450px; border-radius: 12px; display: block; margin: 2rem auto; border: 1px solid #ddd;"
+/>
+<p>
+ Above is the mechanical claw our group made for the first APSC 101 group project. Shout out to my group mates for carrying me. 
+</p>
+
+<p>
+  So, in the end, I went with CPEN. It was the middle ground: enough hardware to keep options open, enough software to eventually do what I wanted — and a solid dose of “let’s see where this actually takes me.”
+</p>
+
+<p>
+  Everyone else was giving me the usual advice: <em>CS = software, CPEN = hardware</em>. Simple. Logical. But as it turns out, it’s not that simple. And the further I got into machine learning, the more that line started to blur.
 </p>
 
 <div style="background: #f9f7f1; padding: 1.5rem; border-left: 5px solid #f39c12; border-radius: 8px; margin: 2rem 0;">
@@ -29,45 +45,40 @@ description: "How my journey into Machine Learning blurred the line between Comp
     <li>Why is my model bottlenecked on memory?</li>
     <li>Why does it run fine on <code>Colab</code> but crawl on real hardware?</li>
     <li>Why does moving one <code>tensor</code> suddenly spike GPU utilization to 100%?</li>
+    <li>Why does that one Python typo destroy three hours of training? (RIP)</li>
   </ul>
 </div>
 
 <p>
-  At some point, you stop arguing about loss functions and start arguing with
-  the machine itself.
+  At this point, you stop arguing about loss functions and start arguing with the machine itself.
+  And that’s where the CS vs CPEN divide starts to feel… artificial.
 </p>
 
-<p>
-  That’s where the CS vs CPEN divide started to feel… artificial.
-</p>
+<h3>💻 CS vs CPEN: What They Actually Teach You</h3>
 
 <ul>
   <li>
-    <strong>The CS side:</strong> You build the mathematical intuition, understand optimization, algorithms, and why your model <em>should</em> converge (in theory).
+    <strong>CS:</strong> Abstract thinking, algorithms, and “does it work in theory?” You learn to build models, understand convergence, and occasionally cry over NP-complete problems.
   </li>
   <li>
-    <strong>The CPEN side:</strong> You understand why it doesn’t. You see how memory hierarchies, parallelism, and hardware constraints quietly decide whether your “state-of-the-art” model actually runs in under three business days.
+    <strong>CPEN:</strong> Concrete thinking, hardware realities, and “does it actually run?” You wrestle with memory hierarchies, pipelines, GPU clusters, and the terrifying world of system-level debugging.
   </li>
 </ul>
 
 <p>
-  Ironically, the deeper I got into ML, the less I cared about whether something was labeled “software” or “hardware.”
+  For ML, both perspectives matter. CS gives you the map; CPEN teaches you to navigate the terrain without burning your laptop.
 </p>
 
-<p>
-  The people doing genuinely interesting ML work aren’t living at either extreme. They’re sitting in the uncomfortable middle — tweaking kernels, optimizing data movement, and trying not to set the server on fire while scaling models.
-</p>
+<div style="background: #eef7f6; padding: 1.5rem; border-left: 5px solid #27ae60; border-radius: 8px; margin: 2rem 0;">
+  Ironically, the deeper I got into ML, the less I cared about labels like “software” or “hardware.” The people doing genuinely interesting ML work aren’t living at either extreme—they’re in the uncomfortable middle: tweaking kernels, optimizing memory, and praying the server doesn’t explode.
+</div>
 
 <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
 
 <h2>🧠 So… Does That Mean CPEN Is “Better” for ML?</h2>
 
 <p>
-  Not really. And also: kind of yes. And also: kind of no.
-</p>
-
-<p>
-  (Welcome to engineering.)
+  Not really. And also… maybe. And yes, sometimes. (Welcome to engineering logic.)
 </p>
 
 <p>
@@ -76,12 +87,8 @@ description: "How my journey into Machine Learning blurred the line between Comp
 </p>
 
 <ul>
-  <li>
-    CS trains you to think in abstractions: models, guarantees, complexity.
-  </li>
-  <li>
-    CPEN forces you to confront reality: caches, pipelines, instruction sets, and the fact that “just parallelize it” is not a solution.
-  </li>
+  <li>CS trains you to think in abstractions: models, guarantees, complexity, and sometimes frustration over imaginary errors in Jupyter.</li>
+  <li>CPEN forces you to confront reality: caches, pipelines, instruction sets, and the fact that “just parallelize it” is not a solution.</li>
 </ul>
 
 <div style="background: #eef7f6; padding: 1.5rem; border-left: 5px solid #27ae60; border-radius: 8px; margin: 2rem 0;">
@@ -89,7 +96,7 @@ description: "How my journey into Machine Learning blurred the line between Comp
 </div>
 
 <p>
-  If anything, ML made the CS vs CPEN choice feel <strong>less</strong> like a fork in the road and more like choosing which weaknesses you want to patch later — and being okay with it.
+  In the end, ML made the CS vs CPEN choice feel <strong>less</strong> like a fork in the road and more like choosing which weaknesses you want to patch later — and being okay with it.
 </p>
 
 <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
@@ -97,14 +104,20 @@ description: "How my journey into Machine Learning blurred the line between Comp
 <h3>📚 Glossary for the Uninitiated</h3>
 
 <ul>
-  <li><code>scikit-learn</code>: A popular Python library for machine learning; great for prototyping but hides the hardware details.</li>
-
-  <li><code>Colab</code>: Google’s free Jupyter notebook environment; convenient, but often slower than local hardware for big models.</li>
-
+  <li><code>scikit-learn</code>: A Python library for ML; great for prototyping but hides the hardware details.</li>
+  <li><code>Colab</code>: Google’s free Jupyter notebook environment; convenient but sometimes slower than your own GPU.</li>
   <li><code>tensor</code>: Multi-dimensional arrays used in ML frameworks like PyTorch and TensorFlow.</li>
-
   <li><code>GPU</code>: Graphics Processing Unit, the workhorse of training modern ML models quickly.</li>
-
-  <li><code>kernel</code>: The unit of work inside a GPU that handles operations on tensors; messing with it is how you accidentally overheat your server.</li>
+  <li><code>kernel</code>: The unit of work inside a GPU; messing with it is how you accidentally overheat your server.</li>
+  <li><code>pipeline</code>: The end-to-end flow of your ML model; if one step breaks, the whole thing collapses like a Jenga tower.</li>
 </ul>
+
+<div style="text-align:center; margin-top:3rem; font-size:0.9rem; color:#888;">
+  Written by Anson. I promise no GPUs were harmed in the making of this blog.
+</div>
+
+<p id="apscclaw" style="font-size:0.9rem; color:#555;">
+  <sup>1</sup>APSC 101 project: our very first project in UBC Engineering — we had to create an autonomous mechanical claw from scratch that operated with an Arduino and sensors. It was chaotic, frustrating, and glorious.
+</p>
+
 
