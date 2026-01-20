@@ -1,0 +1,110 @@
+---
+layout: post
+title: "CS vs CPEN Through the Lens of Machine Learning"
+date: 2026-01-19
+permalink: /cs-vs-cpen-ubc-ML/
+description: "How my journey into Machine Learning blurred the line between Computer Science and Computer Engineering at UBC."
+---
+<hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
+
+<h2>🤖 CS vs CPEN: What Machine Learning Taught Me</h2>
+
+<p>
+  Here’s where things got weird <em>for me</em>.
+</p>
+
+<p>
+  Like many students, I started with a simple plan:
+  <em>“I want to do Machine Learning → therefore CS.”</em>
+  Clean. Logical. Python-coded pipeline. End of story.
+</p>
+
+<p>
+  Except… once you go beyond <code>scikit-learn</code> tutorials, that story falls apart fast.
+</p>
+
+<div style="background: #f9f7f1; padding: 1.5rem; border-left: 5px solid #f39c12; border-radius: 8px; margin: 2rem 0;">
+  Modern ML isn’t just “write model, train model, profit.” It’s more like:
+  <ul>
+    <li>Why is my model bottlenecked on memory?</li>
+    <li>Why does it run fine on <code>Colab</code> but crawl on real hardware?</li>
+    <li>Why does moving one <code>tensor</code> suddenly spike GPU utilization to 100%?</li>
+  </ul>
+</div>
+
+<p>
+  At some point, you stop arguing about loss functions and start arguing with
+  the machine itself.
+</p>
+
+<p>
+  That’s where the CS vs CPEN divide started to feel… artificial.
+</p>
+
+<ul>
+  <li>
+    <strong>The CS side:</strong> You build the mathematical intuition, understand optimization, algorithms, and why your model <em>should</em> converge (in theory).
+  </li>
+  <li>
+    <strong>The CPEN side:</strong> You understand why it doesn’t. You see how memory hierarchies, parallelism, and hardware constraints quietly decide whether your “state-of-the-art” model actually runs in under three business days.
+  </li>
+</ul>
+
+<p>
+  Ironically, the deeper I got into ML, the less I cared about whether something was labeled “software” or “hardware.”
+</p>
+
+<p>
+  The people doing genuinely interesting ML work aren’t living at either extreme. They’re sitting in the uncomfortable middle — tweaking kernels, optimizing data movement, and trying not to set the server on fire while scaling models.
+</p>
+
+<hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
+
+<h2>🧠 So… Does That Mean CPEN Is “Better” for ML?</h2>
+
+<p>
+  Not really. And also: kind of yes. And also: kind of no.
+</p>
+
+<p>
+  (Welcome to engineering.)
+</p>
+
+<p>
+  If your goal is ML research, applied ML, or ML-adjacent software roles,
+  <strong>both degrees get you there</strong>. What changes is the <em>lens</em> you develop:
+</p>
+
+<ul>
+  <li>
+    CS trains you to think in abstractions: models, guarantees, complexity.
+  </li>
+  <li>
+    CPEN forces you to confront reality: caches, pipelines, instruction sets, and the fact that “just parallelize it” is not a solution.
+  </li>
+</ul>
+
+<div style="background: #eef7f6; padding: 1.5rem; border-left: 5px solid #27ae60; border-radius: 8px; margin: 2rem 0;">
+  Personally, that hardware exposure stopped feeling like a distraction and started feeling like context. Painful context. Occasionally soul-crushing context. But context nonetheless.
+</div>
+
+<p>
+  If anything, ML made the CS vs CPEN choice feel <strong>less</strong> like a fork in the road and more like choosing which weaknesses you want to patch later — and being okay with it.
+</p>
+
+<hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;" />
+
+<h3>📚 Glossary for the Uninitiated</h3>
+
+<ul>
+  <li><code>scikit-learn</code>: A popular Python library for machine learning; great for prototyping but hides the hardware details.</li>
+
+  <li><code>Colab</code>: Google’s free Jupyter notebook environment; convenient, but often slower than local hardware for big models.</li>
+
+  <li><code>tensor</code>: Multi-dimensional arrays used in ML frameworks like PyTorch and TensorFlow.</li>
+
+  <li><code>GPU</code>: Graphics Processing Unit, the workhorse of training modern ML models quickly.</li>
+
+  <li><code>kernel</code>: The unit of work inside a GPU that handles operations on tensors; messing with it is how you accidentally overheat your server.</li>
+</ul>
+
